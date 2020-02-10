@@ -1,0 +1,41 @@
+{
+  "name": "nock-server",
+  "version": "0.0.2",
+  "description": "nock-server",
+  "repository": "https://github.com/Crayonn/nock-server.git",
+  "scripts": {
+    "dev": "node ./bin/nock-server -w",
+    "run": "node ./bin/nock-server"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "npm",
+    "mock",
+    "rest",
+    "REST",
+    "rest API",
+    "REST API",
+    "api",
+    "API",
+    "json",
+    "server",
+    "express",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^3.3.1",
+    "colors": "^1.4.0",
+    "commander": "^4.1.0",
+    "express": "^4.17.1"
+  },
+  "bin": {
+    "nock-server": "./bin/nock-server.js"
+  },
+  "devDependencies": {}
+}
