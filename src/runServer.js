@@ -1,14 +1,17 @@
 const express = require('express');
 const path = require('path');
 const chokidar = require('chokidar');
+const cors = require('cors');
 const readMockFiles = require('./readMockFiles');
 const utils = require('./utils');
 const reloadRouter = require('./reloadRouter');
+const logger = require('./middleware/logger');
 
 module.exports = function runServer(config) {
     let app = express();
     let isReady = false;
-
+    app.use(cors());
+    app.use(logger());
     app.use(config.baseUrl, reloadRouter.handler());
     readMockFiles(config, app);
 
