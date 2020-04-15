@@ -1,6 +1,6 @@
 {
   "name": "nock-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "nock-server",
   "repository": "https://github.com/Crayonn/nock-server.git",
   "scripts": {
